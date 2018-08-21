@@ -88,5 +88,5 @@ int KruskalMSTDepth(Graph* graph)
 
     }
 
-    return result[0].rank;
+    return subsets[find(subsets, subsets[result[0].source])].rank;
 }
